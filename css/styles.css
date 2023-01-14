@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+header{
+    position: sticky;
+    top: 0;
+  }
+
+
 nav{
     
     background: black;
@@ -142,6 +148,14 @@ h2{
  
  }
 
+.imagencons{
+    
+    height: 600px;
+    width: 800px;
+    margin-left: 150px;
+    padding: 2%;
+}
+
 .img-pie{
     width: 5rem;
     height: 5rem;
@@ -171,7 +185,7 @@ h2{
     .term-cond{
     flex: 0 0 100%;
     max-width: 100%;
-        
+     
 }
 }
 
@@ -253,6 +267,9 @@ h2{
 
     
     
+
+
+
     /* .boton{
         display: none;
         line-height: 30px;
