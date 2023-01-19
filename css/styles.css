@@ -74,7 +74,7 @@ footer{
 
 .fondo-paginas{
     background-color: grey;
-    width: 90%;
+    width: 100%;
     margin: auto;
 
 }
@@ -140,7 +140,10 @@ h2{
     margin: 50px;
     display: flex;
     align-items: center;
+    transition: all 3s;
 }
+
+
 
 .div_salto img p{
     display: grid;
@@ -150,10 +153,10 @@ h2{
 
 .imagencons{
     
-    height: 600px;
-    width: 800px;
-    margin-left: 150px;
-    padding: 2%;
+    height: 200px;
+    width: 100%;
+    /* margin-left: 150px;
+    padding: 2rem; */
 }
 
 .img-pie{
@@ -198,10 +201,11 @@ h2{
     height: 200px;
 }
 
+
+
 .logo{
     height: 70px;
     width:70px;
-    
 }
 
 
@@ -236,6 +240,18 @@ h2{
         flex-direction: column
     }
     
+    .div_salto{
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .descripcion-prod{
+        margin-top: 1rem;
+    }
+
+
     .enlace{
         display: none;
         
@@ -313,4 +329,12 @@ h2{
         height:341px;
     }
 
+}
+
+
+.consulta{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
