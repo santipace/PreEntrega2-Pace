@@ -21,61 +21,53 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="imagennav" src="../assets/img/logito.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">INICIO
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./consulta.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./compras.html">COMPRAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./acerca-sobre-nosotros.html">QUIENES SOMOS?</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./web-demopt2/acerca-sobre-nosotros.html" role="button"
-                            aria-haspopup="true" aria-expanded="false">QUIENES SOMOS?</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li> -->
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="search" placeholder="Search" />
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-                        Search
-                    </button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
-
 
 <body>
+
+    <!-- BARRA DE NAVEGACION -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="imagennav" src="../assets/img/logito.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">INICIO
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./consulta.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./compras.html">COMPRAS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./acerca-sobre-nosotros.html">QUIENES SOMOS?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN DE LA PAGINA -->
     <main class="fondo-paginas">
+        <div class="imagencons">
+            <img class="productosimg" src="../assets/img/imagen-productos.webp" alt="">
+        </div>
         <h1 class="animate__animated animate__backInDown">Compras</h1>
         <p class="parrafo-compras">
             Acá podras elegir nuestros modelos que encontraras previamente en nuestra sección <b>Productos!</b> <br>
@@ -83,45 +75,46 @@
             Para mas información dirigite a nuestra sección de <b>Consulta</b> para que podamos resolver todas tus
             dudas!
         </p>
-        <div>
-            <h2>Elegi tu modelo</h2>
-        </div>
         <fieldset>
             <div class="cuadrado">
                 <div class="img-carrito">
-                    <img src="../assets/img/carrito.png" alt="">
+                    <img class="animate__animated animate__bounceInLeft" src="../assets/img/carrito.png" alt="">
                 </div>
                 <div class="compras">
-                    <select name="Producto">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione su producto</option>
                         <option value="sillalta">Sillas altas</option>
                         <option value="canastto">Canasto</option>
                         <option value="estaca">Estaca</option>
                         <option value="barra">Barra separadora</option>
                         <option value="mesa1">Mesa chica</option>
                         <option value="mesa2">Mesa grande</option>
+                        <option value="mesa2">Picaporte</option>
+                        <option value="mesa2">Mancuernas</option>
+                        <option value="mesa2">Perfiles</option>
+                        <option value="mesa2">Rejas</option>
                         <option value="mas">Para mas opciones ir a Consultas</option>
                     </select>
 
-                </div>
-                <div>
-                    <select name="Colores">
-                        <option value="Blanco">Blanco</option>
-                        <option value="Azul">Azul</option>
-                        <option value="Negro">Negro</option>
-                    </select>
-                </div>
-                <div>
-                    <select name="Cantidad">
-                        <option value="uno">1</option>
-                        <option value="dos">2</option>
-                        <option value="tres">3</option>
-                        <option value="Mas">Mas</option>
-                    </select>
-                </div>
+                    <br>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Colores</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Cantidad</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                        <label class="btn btn-primary" for="btn-check"><b>Comprar</b></label>
+                    </div>
         </fieldset>
         </div>
         </p>
     </main>
+    <!-- FOOTER -->
     <footer>
 
         <div class="term-cond">

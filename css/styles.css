@@ -17,15 +17,6 @@ li a:hover {
     transition: .5s;
 }
 
-
-.articulacion {
-    background: url(/assets/img/industria-pyme-metalurgica.webp) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 700px;
-
-}
-
 footer {
     background-color: black;
     background-size: cover;
@@ -38,6 +29,26 @@ footer {
     justify-items: center;
 }
 
+body {
+    background-color: grey;
+}
+
+h2 {
+    font-family: 'Kanit', sans-serif;
+
+}
+
+/* Clases */
+
+.articulacion {
+    background: url(/assets/img/industria-pyme-metalurgica.webp) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+
+}
+
+
 .fondo-paginas {
     background-color: grey;
     width: 100%;
@@ -45,9 +56,6 @@ footer {
 
 }
 
-body {
-    background-color: grey;
-}
 
 .fondo-paginas h1 {
     text-align: center;
@@ -74,20 +82,6 @@ body {
     width: 100%;
 }
 
-.compras1 {
-    text-align: center;
-}
-
-.ggmaps {
-    margin: auto;
-    text-align: center;
-
-}
-
-h2 {
-    font-family: 'Kanit', sans-serif;
-}
-
 .caja {
     text-align: center;
 }
@@ -99,6 +93,9 @@ h2 {
     grid-template-areas: "productos productos1"
         "productos productos2"
         "productos productos3";
+    justify-content: space-around;
+    gap: 20px;
+
 }
 
 
@@ -115,7 +112,6 @@ h2 {
 }
 
 .imagencons {
-
     height: 200px;
     width: 100%;
 }
@@ -123,14 +119,6 @@ h2 {
 .img-pie {
     width: 5rem;
     height: 5rem;
-}
-
-@media (min-width: 768px) {
-    .col-img {
-        flex: 0 0 25%;
-        max-width: 25%;
-
-    }
 }
 
 .term-cond {
@@ -145,13 +133,6 @@ h2 {
 }
 
 
-@media (min-width: 768px) {
-    .term-cond {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
 .descripcion-prod {
     margin-left: 1rem;
     font-style: italic;
@@ -160,6 +141,13 @@ h2 {
 .img-prod {
     width: 200px;
     height: 200px;
+    transition: all 1s;
+}
+
+.img-prod:hover {
+    height: 300px;
+    width: 300px;
+
 }
 
 
@@ -176,12 +164,6 @@ h2 {
     align-items: center;
 }
 
-#titulo-productos {
-    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    margin: 0.625rem;
-
-}
 
 .video {
     display: flex;
@@ -191,6 +173,7 @@ h2 {
 
 .parrafo-compras {
     text-align: center;
+    font-weight: bold;
 }
 
 .consulta {
@@ -200,10 +183,85 @@ h2 {
 
 }
 
-@media only screen and (max-width: 540px) {
+.productosimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cajaconsulta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formulariocaja {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.parrafo {
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+/* ID */
+
+#titulo-productos {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin: 0.625rem;
+
+}
+
+/* MEDIA QUERYS */
+
+@media (max-width: 992px) {
     .contenedor-grid {
         display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div_salto {
+        margin: 50px;
+        display: flex;
+        align-items: center;
         flex-direction: column;
+    }
+
+    .descripcion-prod {
+        margin-top: 1rem;
+    }
+
+    .articulacion-texto {
+        font-size: 40px;
+    }
+
+    .videito {
+        margin: auto;
+        width: 475px;
+        height: 341px;
+    }
+
+    .mapa {
+        display: grid;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .img-carrito{
+        width: 200px;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .contenedor-grid {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .div_salto {
@@ -218,33 +276,8 @@ h2 {
     }
 
 
-    .enlace {
-        display: flex;
-
-    }
-
     .articulacion-texto {
         font-size: 40px;
-    }
-
-    nav {
-        display: inline-table;
-        width: 100%;
-        height: 50%;
-        background-color: black;
-        text-align: center;
-        transition: all .5s;
-
-    }
-
-    .menu li a {
-
-        line-height: 30px;
-        margin: 50px 0;
-        transition: all .5s;
-        color: #fff;
-        font-size: 20px;
-
     }
 
     .videito {
@@ -253,4 +286,59 @@ h2 {
         height: 341px;
     }
 
+    .mapa {
+        display: grid;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .term-cond {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .img-carrito{
+        width: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .contenedor-grid {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .div_salto {
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .descripcion-prod {
+        margin-top: 1rem;
+    }
+
+    .articulacion-texto {
+        font-size: 40px;
+    }
+
+    .videito {
+        margin: auto;
+        width: 475px;
+        height: 341px;
+    }
+
+    .mapa {
+        display: grid;
+        width: 100%;
+        padding: 50px;
+
+    }
+
+    .img-carrito{
+        width: 200px;
+    }
 }
