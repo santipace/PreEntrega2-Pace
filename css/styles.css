@@ -41,7 +41,7 @@ h2 {
 /* Clases */
 
 .articulacion {
-    background: url(/assets/img/industria-pyme-metalurgica.webp) no-repeat;
+    background: url(../assets/img/industria-pyme-metalurgica.webp) no-repeat;
     background-size: cover;
     background-position: center center;
     height: 700px;
